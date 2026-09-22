@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" width="1200" height="1600" role="img">
+
+  <defs>
+    <linearGradient id="gHP" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#24120F"/>
+      <stop offset="1" stop-color="#07080A"/>
+    </linearGradient>
+    <radialGradient id="glowHP" cx="0.5" cy="0.34" r="0.72">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vigHP" cx="0.5" cy="0.45" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.82"/>
+    </radialGradient>
+    <filter id="grainHP" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="41" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.34"/></feComponentTransfer>
+    </filter>
+    <filter id="softHP" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+    <filter id="soft2HP" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#gHP)"/>
+  <rect width="1200" height="1600" fill="url(#glowHP)"/>
+  <g filter="url(#soft2HP)">
+    <path d="M600 236 c62 0 100 50 100 112 0 44-20 80-38 98 l6 34 c72 20 118 60 134 116 14 50 20 132 24 210 6 118 8 268 8 394 H366 c0-126 2-276 8-394 4-78 10-160 24-210 16-56 62-96 134-116 l6-34 c-18-18-38-54-38-98 0-62 38-112 100-112Z" fill="#000" fill-opacity="0.72"/>
+  </g>
+  <g filter="url(#softHP)" opacity="0.5">
+    <path d="M330 620 C250 760 230 980 250 1200" stroke="#fff" stroke-opacity="0.1" stroke-width="30" fill="none"/>
+    <path d="M870 620 C950 760 970 980 950 1200" stroke="#fff" stroke-opacity="0.1" stroke-width="30" fill="none"/>
+  </g>
+  <rect width="1200" height="1600" fill="url(#vigHP)"/>
+  <rect width="1200" height="1600" filter="url(#grainHP)" opacity="0.5"/>
+</svg>
