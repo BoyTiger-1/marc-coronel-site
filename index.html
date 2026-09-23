@@ -3,100 +3,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Marc Coronel — Speaker, Health-Tech Consultant, Patient Advocate</title>
-<meta name="description" content="Former amateur boxer. Kidney transplant recipient. TEDx speaker, health-tech strategist and rare-disease advocate. Book Marc Coronel for keynotes, consulting and advocacy partnerships.">
-<meta name="theme-color" content="#08090B">
+<title>Marc Coronel — Speaker, Patient Advocate, Health-Tech Strategist</title>
+<meta name="description" content="Former boxer. Kidney transplant recipient. TEDx speaker, patient advocate and healthcare strategist. Book Marc Coronel for keynotes, consulting and advocacy partnerships.">
+<meta name="theme-color" content="#0E0C0B">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Marc Coronel — The fight became a platform">
-<meta property="og:description" content="TEDx speaker, health-tech strategist and kidney patient advocate. Years on dialysis, 32 donors ruled out, one story that found a match.">
-<meta property="og:image" content="assets/img/photos/hero-portrait.jpg">
+<meta property="og:description" content="TEDx speaker, patient advocate and healthcare strategist. Fifteen years with a rare kidney disease, eighteen months of dialysis, one story told out loud.">
+<meta property="og:image" content="assets/img/photos/hero-tedx.webp">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308090B'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23C8362A' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E0C0B'/%3E%3Ctext x='16' y='22.5' font-family='Arial Black,Arial' font-weight='900' font-size='15' fill='%23E2412F' text-anchor='middle'%3EMC%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/photos/hero-tedx-mono.webp">
 <link rel="stylesheet" href="assets/css/main.css">
+
+<script>document.documentElement.className += ' js';</script>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Marc Coronel",
-  "jobTitle": ["Keynote Speaker", "Health-Tech Strategist", "Patient Advocate"],
-  "description": "TEDx speaker, health-tech strategist and rare kidney disease advocate. Diagnosed with focal segmental glomerulosclerosis at 26, received a living-donor kidney transplant in 2019, and now advises health systems and speaks nationally on resilience and patient voice.",
+  "jobTitle": ["Keynote Speaker", "Patient Advocate", "Healthcare Strategist"],
+  "description": "TEDx speaker, patient advocate and healthcare strategist. Diagnosed with focal segmental glomerulosclerosis (FSGS) in 2011, received a living-donor kidney transplant at UCLA in December 2019, and now speaks, consults and advocates for patients with rare kidney disease.",
   "address": { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
   "sameAs": [
     "https://www.instagram.com/kidney_fighter/",
+    "https://www.youtube.com/@KidneyFighterShow",
     "https://www.linkedin.com/in/marc-a-coronel-43a41b64/"
   ],
-  "knowsAbout": ["Focal segmental glomerulosclerosis", "Living organ donation", "Patient advocacy", "Digital health", "Resilience"]
+  "knowsAbout": ["Focal segmental glomerulosclerosis", "Living organ donation", "Patient advocacy", "Patient engagement", "Digital health", "Resilience"]
 }
 </script>
 </head>
-<body data-phase="open">
+<body>
 
-<!-- film grain, static, zero cost -->
 <div class="grain" aria-hidden="true"></div>
 
-<!-- masked reveal layers: sit behind hero / identity / story -->
-<div class="reveal" id="reveal" aria-hidden="true">
-  <div class="reveal__layer is-on" data-reveal="ring"  style="background-image:url(assets/img/reveal-ring.jpg)"></div>
-  <div class="reveal__layer" data-reveal="ward"  style="background-image:url(assets/img/reveal-ward.jpg)"></div>
-  <div class="reveal__layer" data-reveal="stage" style="background-image:url(assets/img/reveal-stage.jpg)"></div>
-</div>
-
-<!-- ambient drifting light — cheap, transform/opacity only, never static-flat -->
-<div class="ambient" aria-hidden="true">
-  <span class="ambient__glow ambient__glow--1"></span>
-  <span class="ambient__glow ambient__glow--2"></span>
-  <span class="ambient__glow ambient__glow--3"></span>
-</div>
-
-<!-- custom cursor: difference blend keeps it legible on any backdrop -->
+<!-- cursor: one dot, one ring, a label. Difference blend keeps it legible everywhere -->
 <div class="cursor" id="cursor" aria-hidden="true">
   <span class="cursor__ring"></span>
   <span class="cursor__dot"></span>
-  <span class="cursor__label" id="cursorLabel"></span>
+</div>
+<div class="cursor-label" id="cursorLabel" aria-hidden="true"><span></span></div>
+
+<!-- ═══ LOADER ═════════════════════════════════════════════════════════════
+     Four shutters echo the four panels of Marc's LinkedIn banner. They lift
+     away in the same rhythm the hero panels arrive in.                     -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__shutters">
+    <span></span><span></span><span></span><span></span>
+  </div>
+  <div class="loader__inner">
+    <p class="loader__kicker"><span>Los Angeles</span><span>Est. 2011</span></p>
+    <h2 class="loader__name" id="loaderName">MARC</h2>
+    <p class="loader__roles" id="loaderRoles">
+      <span>A Fighter</span><span>A Speaker</span><span>A Patient Advocate</span><span>A Strategist</span>
+    </p>
+  </div>
+  <p class="loader__count"><span id="loaderCount">00</span></p>
+  <p class="loader__skip">Click to skip</p>
 </div>
 
-<!-- opening title card -->
-<div class="curtain" id="curtain" aria-hidden="true">
-  <div class="curtain__plate">
-    <img src="assets/img/photos/01-hero-fighter.jpg" alt="" aria-hidden="true">
-  </div>
-  <div class="curtain__inner">
-    <span class="curtain__eyebrow">Los Angeles, California</span>
-    <span class="curtain__name"><em>Marc</em> Coronel</span>
-    <span class="curtain__role">Speaker &middot; Health-Tech Strategist &middot; Patient Advocate</span>
-  </div>
-  <span class="curtain__hint">Press any key, or wait</span>
-</div>
+<a class="skiplink" href="#services">Skip story, view services</a>
 
-<a class="skiplink" href="#services">Skip to services</a>
-
-<header class="head">
-  <a class="wordmark" href="#top" aria-label="Marc Coronel, back to top">
-    <span class="wordmark__mark">MC</span>
-    <span class="wordmark__name">Marc Coronel</span>
+<!-- ═══ HEADER ═════════════════════════════════════════════════════════════ -->
+<header class="head" id="head">
+  <a class="brand" href="#top" aria-label="Marc Coronel, back to top" data-cursor="Top">
+    <span class="brand__mark" aria-hidden="true">MC</span>
+    <span class="brand__name"><b>Marc</b> Coronel</span>
   </a>
   <div class="head__right">
-    <a class="head__skip" href="#services" data-cursor="jump">Skip story <span aria-hidden="true">/</span> View services</a>
-    <a class="btn btn--book" href="#contact" data-cursor="book">Book Marc</a>
+    <a class="head__link" href="#services" data-cursor="Skip">Skip story</a>
+    <button class="head__sound" id="soundBtn" type="button" aria-pressed="false" data-cursor="Sound">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="head__sound-txt">Sound <em>off</em></span>
+    </button>
+    <button class="head__menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu" data-cursor="Index">
+      <span class="head__menu-lines" aria-hidden="true"><i></i><i></i></span>
+      <span class="head__menu-txt">Index</span>
+    </button>
+    <a class="btn-book" href="#contact" data-cursor="Book">
+      <span class="btn-book__txt" data-text="Book Marc">Book Marc</span>
+      <span class="btn-book__dot" aria-hidden="true"></span>
+    </a>
   </div>
 </header>
 
-<!-- scroll progress + section index -->
+<!-- ═══ INDEX MENU ═════════════════════════════════════════════════════════ -->
+<nav class="menu" id="menu" aria-label="Site index" aria-hidden="true">
+  <div class="menu__bg" aria-hidden="true"></div>
+  <div class="menu__inner">
+    <ol class="menu__list">
+      <li><a href="#hero"      data-img="assets/img/photos/hero-tedx.webp"><i>00</i><span>Opening</span></a></li>
+      <li><a href="#intro"     data-img="assets/img/photos/portrait-studio.webp"><i>01</i><span>Who he is</span></a></li>
+      <li><a href="#rounds"    data-img="assets/img/photos/ch-transplant.webp"><i>02</i><span>Eight rounds</span></a></li>
+      <li><a href="#impact"    data-img="assets/img/photos/g-hill-group.webp"><i>03</i><span>The receipts</span></a></li>
+      <li><a href="#room"      data-img="assets/img/photos/g-summit-2.webp"><i>04</i><span>In the room</span></a></li>
+      <li><a href="#writing"   data-img="assets/img/photos/g-laptop.webp"><i>05</i><span>Writing</span></a></li>
+      <li><a href="#platform"  data-img="assets/img/photos/g-studio.webp"><i>06</i><span>The platform</span></a></li>
+      <li><a href="#services"  data-img="assets/img/photos/g-tedx-wide.webp"><i>07</i><span>Work with Marc</span></a></li>
+      <li><a href="#contact"   data-img="assets/img/photos/g-sacramento.webp"><i>08</i><span>Contact</span></a></li>
+    </ol>
+    <figure class="menu__preview" aria-hidden="true"><img id="menuPreview" src="assets/img/photos/hero-tedx.webp" alt=""></figure>
+    <div class="menu__foot">
+      <a href="https://www.instagram.com/kidney_fighter/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/marc-a-coronel-43a41b64/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.youtube.com/@KidneyFighterShow" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.youtube.com/watch?v=HOiEdUv2Y0g" target="_blank" rel="noopener">TEDx talk</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ PROGRESS RAIL ══════════════════════════════════════════════════════ -->
 <nav class="rail" aria-label="Page progress">
+  <span class="rail__label" id="railLabel">Opening</span>
   <div class="rail__track"><div class="rail__fill" id="railFill"></div></div>
-  <ol class="rail__ticks">
+  <ol class="rail__ticks" id="railTicks">
     <li><a href="#hero"     data-tick="hero"><span>Opening</span></a></li>
-    <li><a href="#identity" data-tick="identity"><span>Who he is</span></a></li>
-    <li><a href="#story"    data-tick="story"><span>The chapters</span></a></li>
-    <li><a href="#hinge"    data-tick="hinge"><span>The hinge</span></a></li>
-    <li><a href="#proof"    data-tick="proof"><span>Proof</span></a></li>
+    <li><a href="#intro"    data-tick="intro"><span>Who he is</span></a></li>
+    <li><a href="#rounds"   data-tick="rounds"><span>Eight rounds</span></a></li>
+    <li><a href="#impact"   data-tick="impact"><span>Receipts</span></a></li>
+    <li><a href="#room"     data-tick="room"><span>In the room</span></a></li>
+    <li><a href="#writing"  data-tick="writing"><span>Writing</span></a></li>
+    <li><a href="#platform" data-tick="platform"><span>Platform</span></a></li>
     <li><a href="#services" data-tick="services"><span>Work with Marc</span></a></li>
     <li><a href="#contact"  data-tick="contact"><span>Contact</span></a></li>
   </ol>
@@ -104,400 +138,613 @@
 
 <main id="top">
 
-<!-- ═══ 1. OPENING ═══════════════════════════════════════════════════════ -->
-<section class="hero" id="hero" data-section="hero" data-reveal-art="ring">
-  <div class="hero__bg" aria-hidden="true">
-    <img src="assets/img/photos/01-hero-fighter.jpg" alt="" data-parallax="0.04" class="hero__bg-img">
-    <div class="hero__bg-scrim"></div>
+<!-- ═══ 00 · HERO ══════════════════════════════════════════════════════════
+     The background is Marc's LinkedIn banner, rebuilt at full resolution
+     from the original photographs of the same four moments. Mono by default;
+     the cursor paints the colour back in, press-and-hold keeps it.          -->
+<section class="hero" id="hero" data-section="hero" data-label="Opening" data-theme="dark">
+  <div class="hero__stage" id="heroStage" data-cursor="Hold">
+    <div class="hero__panels hero__panels--mono" aria-hidden="true">
+      <figure class="hp" data-i="0"><img src="assets/img/photos/hero-roundtable-mono.webp" alt="" style="--pos:38% 30%"></figure>
+      <figure class="hp" data-i="1"><img src="assets/img/photos/hero-tedx-mono.webp" alt="" style="--pos:50% 30%"></figure>
+      <figure class="hp" data-i="2"><img src="assets/img/photos/hero-summit-mono.webp" alt="" style="--pos:66% 35%"></figure>
+      <figure class="hp hp--type" data-i="3"><img src="assets/img/photos/portrait-black.webp" alt=""><span class="hp__courage">The<br>Courage<br>to&nbsp;Ask</span></figure>
+    </div>
+    <div class="hero__panels hero__panels--color" id="heroColor" aria-hidden="true">
+      <figure class="hp" data-i="0"><img src="assets/img/photos/hero-roundtable.webp" alt="" style="--pos:38% 30%"></figure>
+      <figure class="hp" data-i="1"><img src="assets/img/photos/hero-tedx.webp" alt="" style="--pos:50% 30%"></figure>
+      <figure class="hp" data-i="2"><img src="assets/img/photos/hero-summit.webp" alt="" style="--pos:66% 35%"></figure>
+      <figure class="hp hp--type" data-i="3"><img src="assets/img/photos/portrait-black.webp" alt=""><span class="hp__courage">The<br>Courage<br>to&nbsp;Ask</span></figure>
+    </div>
+    <ol class="hero__captions" aria-hidden="true">
+      <li><i>01</i> Policy roundtable</li>
+      <li><i>02</i> TEDxLogan Circle, 2025</li>
+      <li><i>03</i> NephCure Patient Summit, NYC</li>
+      <li><i>04</i> FOX 11 · The Courage to Ask</li>
+    </ol>
+    <div class="hero__shade" aria-hidden="true"></div>
   </div>
 
-  <div class="hero__grid">
-    <div class="hero__copy">
-      <p class="kicker rv" data-rv="1">TEDx Speaker &middot; Health-Tech Strategist &middot; Patient Advocate</p>
-      <h1 class="hero__h1">
-        <span class="line"><span class="line__in">Former amateur boxer.</span></span>
-        <span class="line"><span class="line__in">Kidney transplant recipient.</span></span>
-        <span class="line"><span class="line__in"><em>The one they call when</em></span></span>
-        <span class="line"><span class="line__in"><em>a story has to land.</em></span></span>
-      </h1>
-      <p class="hero__sub rv" data-rv="6">Two and a half years on dialysis and thirty-two donors ruled out taught Marc Coronel one thing worth building a career on: the story you are willing to tell out loud is the one that finds help. He now teaches health systems, conferences and patient communities how to tell it.</p>
-      <div class="hero__cta rv" data-rv="7">
-        <a class="btn btn--ghost" href="#story" data-cursor="scroll">Read the eight chapters</a>
-        <a class="btn btn--plain" href="#services" data-cursor="jump">Or skip to what he does</a>
+  <div class="hero__content">
+    <p class="hero__kicker">TEDx Speaker &nbsp;/&nbsp; Patient Advocate &nbsp;/&nbsp; Healthcare Strategist</p>
+    <h1 class="hero__name" aria-label="Marc Coronel">
+      <span class="hero__row"><span class="hero__word" data-hero-word>Marc</span></span>
+      <span class="hero__row hero__row--2"><span class="hero__word" data-hero-word>Coronel</span></span>
+    </h1>
+    <div class="hero__bottom">
+      <p class="hero__hook" data-hero-fade>
+        <em>His kidneys failed. The fighter didn&rsquo;t.</em>
+        Fifteen years with a rare kidney disease taught Marc Coronel that the story you&rsquo;re willing to tell out loud is the one that brings help. Now he teaches health systems, patients and policymakers to hear it.
+      </p>
+      <div class="hero__ctas" data-hero-fade>
+        <a class="link-arrow" href="https://www.youtube.com/watch?v=HOiEdUv2Y0g" target="_blank" rel="noopener" data-cursor="Watch">
+          <span class="play" aria-hidden="true"></span>Watch the TEDx talk
+        </a>
+        <a class="link-arrow link-arrow--quiet" href="#rounds" data-cursor="Read">Read the eight rounds</a>
       </div>
     </div>
-
-    <figure class="hero__portrait rv wipe" data-rv="4">
-      <div class="plate plate--tall" data-parallax="0.06">
-        <img src="assets/img/photos/hero-portrait.jpg" alt="Marc Coronel, photographed in Los Angeles" width="738" height="1064" fetchpriority="high">
-      </div>
-      <figcaption>Los Angeles &middot; 2026</figcaption>
-    </figure>
   </div>
 
-  <div class="hero__foot">
-    <span class="hero__hint" data-cursor="hold">Move your cursor. Press and hold to keep the frame.</span>
-    <span class="hero__scroll" aria-hidden="true">Scroll<i></i></span>
+  <div class="hero__foot" data-hero-fade>
+    <span class="hero__hint"><i class="hint-dot" aria-hidden="true"></i>Move to paint the colour back in. Press and hold to keep it.</span>
+    <span class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></span>
   </div>
 </section>
 
-<!-- ═══ 2. IDENTITY ══════════════════════════════════════════════════════ -->
-<section class="ident" id="identity" data-section="identity" data-reveal-art="ring">
-  <p class="eyebrow rv" data-rv="1">Four ways to read one person</p>
+<!-- ═══ 01 · INTRO / MANIFESTO ═════════════════════════════════════════════ -->
+<section class="intro" id="intro" data-section="intro" data-label="Who he is" data-theme="light">
+  <p class="eyebrow"><span class="eyebrow__no">01</span> Who he is</p>
+  <p class="manifesto" id="manifesto">
+    In 2011 a routine physical
+    <span class="pill" aria-hidden="true"><img src="assets/img/photos/portrait-studio.webp" alt="" loading="lazy"></span>
+    found a rare kidney disease in a Hollywood fitness trainer and amateur boxer. Eighteen months of dialysis,
+    <span class="pill pill--red" aria-hidden="true"><img src="assets/img/photos/ch-pills.webp" alt="" loading="lazy"></span>
+    thirty-three people offering a kidney, and one story told out loud later, Marc Coronel turned survival into a platform:
+    <span class="pill" aria-hidden="true"><img src="assets/img/photos/hero-tedx.webp" alt="" loading="lazy"></span>
+    for patients, for the people who treat them, and for the people who write the rules.
+  </p>
 
-  <ol class="ident__list">
-    <li class="ident__row rv" data-rv="2">
-      <span class="ident__no">01</span>
-      <h2 class="ident__role">A Fighter</h2>
-      <p class="ident__note">Three hours a day, six days a week, years before any of this needed to be a metaphor.</p>
+  <div class="intro__grid">
+    <figure class="intro__portrait">
+      <img src="assets/img/photos/portrait-studio.webp" alt="Portrait of Marc Coronel in a light grey jacket" width="900" height="1120" loading="lazy">
+      <figcaption><span>Marc Coronel</span><span>Los Angeles, CA</span></figcaption>
+    </figure>
+    <div class="intro__copy">
+      <p class="lede" data-reveal>He is a patient advocate, speaker and healthcare strategist who works where patients, clinicians, research and policy meet, and he makes sure the patient is in the room when the decisions get made.</p>
+      <p data-reveal>Before FSGS he trained actors, executives and crews on Hollywood film sets and spent three hours a day in a boxing gym. After it he took the same discipline to the dialysis chair, to the transplant waitlist in four states, and eventually to the California State Capitol, Capitol Hill and a TEDx stage.</p>
+      <ul class="intro__facts" data-reveal>
+        <li><b>2011</b><span>Diagnosed with FSGS, age 26</span></li>
+        <li><b>Dec 10, 2019</b><span>Living-donor transplant, UCLA</span></li>
+        <li><b>2025</b><span>TEDxLogan Circle speaker</span></li>
+        <li><b>2025 &amp; 2026</b><span>Two California FSGS resolutions</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 02 · FOUR WAYS TO READ HIM ═════════════════════════════════════════ -->
+<section class="roles" id="roles" data-section="intro" data-label="Who he is" data-theme="light">
+  <header class="roles__head">
+    <p class="eyebrow"><span class="eyebrow__no">02</span> Four ways to read one person</p>
+    <p class="roles__aside" data-reveal>Hover a line to see him at work.</p>
+  </header>
+  <ol class="roles__list" id="rolesList">
+    <li class="role" data-img="assets/img/photos/ch-athlete.webp" data-cursor="View">
+      <span class="role__no">01</span>
+      <h2 class="role__name">A Fighter</h2>
+      <p class="role__note">Boxing gym, three hours a day. Then a disease with no cure, and a comeback that set the rules for the rest of the work.</p>
+      <img class="role__thumb" src="assets/img/photos/ch-athlete.webp" alt="" loading="lazy">
     </li>
-    <li class="ident__row rv" data-rv="3">
-      <span class="ident__no">02</span>
-      <h2 class="ident__role">A Patient Advocate</h2>
-      <p class="ident__note">Primary FSGS is diagnosed in roughly <strong>1.7 of every 100,000</strong> people a year. He has spent over a decade making sure none of them has to work it out alone.</p>
+    <li class="role" data-img="assets/img/photos/g-tedx-wide.webp" data-cursor="View">
+      <span class="role__no">02</span>
+      <h2 class="role__name">A Speaker</h2>
+      <p class="role__note">TEDxLogan Circle, patient summits, health-system symposia, FOX 11. One room at a time, the same argument made better each time.</p>
+      <img class="role__thumb" src="assets/img/photos/g-tedx-wide.webp" alt="" loading="lazy">
     </li>
-    <li class="ident__row rv" data-rv="4">
-      <span class="ident__no">03</span>
-      <h2 class="ident__role">A Speaker</h2>
-      <p class="ident__note"><strong>32</strong> donors came forward. <strong>One</strong> made it through. The difference was a story told out loud.</p>
+    <li class="role" data-img="assets/img/photos/g-hill-meeting.webp" data-cursor="View">
+      <span class="role__no">03</span>
+      <h2 class="role__name">A Patient Advocate</h2>
+      <p class="role__note">He led the campaign for Los Angeles&rsquo; FSGS Awareness Day, then took rare kidney disease to Sacramento and Capitol Hill.</p>
+      <img class="role__thumb" src="assets/img/photos/g-hill-meeting.webp" alt="" loading="lazy">
     </li>
-    <li class="ident__row rv" data-rv="5">
-      <span class="ident__no">04</span>
-      <h2 class="ident__role">A Strategist</h2>
-      <p class="ident__note">The City of Los Angeles and the State of California now formally recognize FSGS awareness &mdash; because a patient carried the ask from a council office to a statehouse himself.</p>
+    <li class="role" data-img="assets/img/photos/g-laptop.webp" data-cursor="View">
+      <span class="role__no">04</span>
+      <h2 class="role__name">A Strategist</h2>
+      <p class="role__note">Patient engagement, digital health and communications for health systems, pharma and nonprofits. He&rsquo;s been the patient, so he doesn&rsquo;t have to guess.</p>
+      <img class="role__thumb" src="assets/img/photos/g-laptop.webp" alt="" loading="lazy">
     </li>
   </ol>
-
-  <figure class="pull rv" data-rv="6">
-    <blockquote>I didn&rsquo;t find my purpose in a moment of peace, it found me in the middle of a crisis.</blockquote>
-    <figcaption>Marc Coronel</figcaption>
-  </figure>
+  <figure class="roles__float" id="rolesFloat" aria-hidden="true"><img src="assets/img/photos/ch-athlete.webp" alt=""></figure>
 </section>
 
-<!-- ═══ 3. HORIZONTAL CHAPTER TRACK ══════════════════════════════════════ -->
-<section class="story" id="story" data-section="story">
-  <div class="story__pin">
+<!-- ═══ 03 · THE PAUSE ═════════════════════════════════════════════════════ -->
+<section class="pause" id="pause" data-section="intro" data-label="Who he is" data-theme="dark">
+  <div class="pause__inner">
+    <p class="eyebrow eyebrow--light">The invisible illness</p>
+    <p class="pause__stat" aria-label="1 in 7">
+      <span class="pause__big" data-count="1">1</span><span class="pause__in">in</span><span class="pause__big" data-count="7">7</span>
+    </p>
+    <p class="pause__line" data-reveal>US adults are estimated to have chronic kidney disease, and <strong>as many as 9 in 10</strong> of them don&rsquo;t know it.</p>
+    <p class="pause__src" data-reveal>Source: CDC, Chronic Kidney Disease in the United States</p>
+    <blockquote class="pause__quote" data-split="words">
+      &ldquo;Sometimes purpose doesn&rsquo;t show up neatly wrapped. Sometimes it looks like a diagnosis, a hospital room, or a broken system.&rdquo;
+    </blockquote>
+    <p class="pause__cite" data-reveal>Marc Coronel, to Bold Journey</p>
+  </div>
+</section>
 
-    <header class="story__head">
-      <p class="eyebrow">The chapters</p>
-      <h2 class="story__title">Eight rooms he had to walk into</h2>
-      <p class="story__nudge" data-cursor="drag">Scroll &mdash; or jump to a chapter below</p>
+<!-- ═══ 04 · EIGHT ROUNDS (horizontal) ═════════════════════════════════════ -->
+<section class="rounds" id="rounds" data-section="rounds" data-label="Eight rounds" data-theme="light">
+  <div class="rounds__pin" id="roundsPin">
+    <header class="rounds__head">
+      <p class="eyebrow"><span class="eyebrow__no">03</span> The story, in eight rounds</p>
+      <h2 class="rounds__title">Every round <em>built</em> the next one.</h2>
+      <p class="rounds__nudge" aria-hidden="true">Keep scrolling <span class="arrow-r"></span></p>
     </header>
 
-    <div class="story__viewport">
-      <ol class="story__rail" id="storyRail">
+    <div class="rounds__viewport">
+      <ol class="rounds__track" id="roundsTrack">
 
-        <li class="chap" data-chap="0" data-reveal-art="ring">
-          <div class="chap__media plate" data-parallax="0.03"><img src="assets/img/photos/boxing-gym.jpg" alt="Marc Coronel training on a heavy bag in a Los Angeles boxing gym" width="736" height="540" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">01</span> Los Angeles &middot; before 2011</p>
-            <h3 class="chap__title">The Boxer</h3>
-            <p>Three hours in the gym, six days a week, with Pacquiao and Mayweather tape running behind him. He trained fighters around Hollywood and was chasing two futures at once &mdash; a pro card, and a seat in a fire academy.</p>
-            <p>What he kept from both was the training itself &mdash; the habit of showing up to something that hurts, on a schedule, whether or not it is working yet.</p>
-            <p class="chap__fact">Three-hour sessions, six days a week, for years. <span>Source: UCLA Health</span></p>
+        <li class="round" data-tone="#EFE8DC">
+          <figure class="round__media"><img src="assets/img/photos/ch-athlete.webp" alt="Marc on a film set, lit for an interview" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R1</span>Los Angeles · before 2011</p>
+            <h3 class="round__title">The Athlete</h3>
+            <p class="round__what">Health and wellness trainer on Hollywood film sets by day, amateur boxer three hours a night, with Pacquiao and Mayweather tapes running behind the heavy bag.</p>
+            <p class="round__built"><b>What it built</b>A habit of showing up to something that hurts, on schedule, whether or not it&rsquo;s working yet.</p>
           </div>
         </li>
 
-        <li class="chap" data-chap="1" data-reveal-art="ward">
-          <div class="chap__media plate"><img src="assets/img/ch-02-diagnosis.svg" alt="Cell clusters, abstract" width="1200" height="1500" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">02</span> 2011 &middot; age 26</p>
-            <h3 class="chap__title">The Diagnosis</h3>
-            <p>A routine physical for an individual insurance policy came back clean. Two days later the clinic called him back in, and a biopsy put a name to it: focal segmental glomerulosclerosis. Scarring in the filters of his kidneys, with no genetic cause anyone could find.</p>
-            <p>No cure, no timeline. Just a number to watch, and a body that still looked like an athlete&rsquo;s.</p>
-            <figure class="chap__quote">
-              <blockquote>I lost every version of myself I recognized.</blockquote>
-              <figcaption>&mdash; on the diagnosis</figcaption>
-            </figure>
+        <li class="round" data-tone="#E6DED1">
+          <figure class="round__media"><img src="assets/img/photos/portrait-studio.webp" alt="Studio portrait of Marc" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R2</span>2011 · age 26</p>
+            <h3 class="round__title">The Diagnosis</h3>
+            <p class="round__what">A physical for an individual insurance policy. A call back two days later. A biopsy with a name: focal segmental glomerulosclerosis. Scarring in the kidney&rsquo;s filters, with no cure and no known genetic cause.</p>
+            <p class="round__built"><b>What it built</b>An understanding of how a person can look like an athlete and still be sick. <em>&ldquo;You don&rsquo;t look sick&rdquo;</em> became a lifelong subject.</p>
           </div>
         </li>
 
-        <li class="chap" data-chap="2" data-reveal-art="ward">
-          <div class="chap__media plate"><img src="assets/img/ch-03-fall.svg" alt="A broken cardiac trace" width="1200" height="1500" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">03</span> Coverage runs out</p>
-            <h3 class="chap__title">The Fall</h3>
-            <p>Once he aged off his father&rsquo;s military coverage, the disease stopped being paperwork and became a bill. For years he held the line on ten to fifteen pills a day and looked completely healthy doing it.</p>
-            <p>Then he went down on the bathroom floor, and woke up in an emergency room being told his kidneys were finished.</p>
-            <p class="chap__fact">10&ndash;15 medications a day, for years, with no visible symptoms. <span>Source: UCLA Health</span></p>
+        <li class="round" data-tone="#D9CFC1">
+          <figure class="round__media"><img src="assets/img/photos/ch-pills.webp" alt="Marc on stage holding a bag of his medications" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R3</span>The long middle</p>
+            <h3 class="round__title">The Fall</h3>
+            <p class="round__what">Ten to fifteen pills a day, for years, looking completely healthy the whole time. Then a collapse at home and an emergency room telling him his kidneys were done.</p>
+            <p class="round__built"><b>What it built</b>The prop he now carries on stage: a clear bag of real medication, so a room can see what &ldquo;managing a condition&rdquo; weighs.</p>
           </div>
         </li>
 
-        <li class="chap" data-chap="3" data-reveal-art="ward">
-          <div class="chap__media plate" data-parallax="0.03"><img src="assets/img/photos/dialysis-chair.jpg" alt="Marc Coronel in a dialysis chair, hand to his face, mid-session" width="1226" height="641" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">04</span> 2017&ndash;2019 &middot; three sessions a week</p>
-            <h3 class="chap__title">The Grind</h3>
-            <p>Three sessions a week, four hours at a time, while a machine did what his body would not. The grief was harder than the needles.</p>
-            <p>So he ran his head the way he used to run camp: books on adversity, speeches on repeat, and a breathing practice he still uses in the wings before a keynote.</p>
-            <figure class="chap__quote">
-              <blockquote>I read about 67 books on mental strength and adversity [while on] dialysis.</blockquote>
-              <figcaption>&mdash; to the American Kidney Fund</figcaption>
-            </figure>
+        <li class="round round--dark" data-tone="#2A2522">
+          <figure class="round__media"><img src="assets/img/photos/ch-couch.webp" alt="Marc seated alone on a white couch, reflective" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R4</span>18 months in the chair</p>
+            <h3 class="round__title">The Chair</h3>
+            <p class="round__what">In-center dialysis, three times a week. He read 67 books on mental strength and adversity, and started talking to the patients in the chairs beside him about fear, confusion and silence.</p>
+            <p class="round__built"><b>What it built</b>A purpose. <em>&ldquo;People were suffering in silence, unsure how to advocate for themselves.&rdquo;</em> So he leaned in.</p>
           </div>
         </li>
 
-        <li class="chap" data-chap="4" data-reveal-art="ward">
-          <div class="chap__media plate"><img src="assets/img/ch-05-search.svg" alt="Waitlist cities plotted as points" width="1200" height="1500" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">05</span> 2019 &middot; four states</p>
-            <h3 class="chap__title">The Search</h3>
-            <p>He listed himself in California, Arizona, Maryland and New York to widen the odds. Then his sister posted the story, FOX 11 ran it, and thirty-two people volunteered a kidney &mdash; including a half-brother who flew in from the Philippines.</p>
-            <p>One by one, every single one of them was ruled out. Back to square one, again.</p>
-            <figure class="chap__quote">
-              <blockquote>When 32 people step forward, you have so much hope and one by one it was denied.</blockquote>
-              <figcaption>&mdash; to FOX 11 Los Angeles</figcaption>
-            </figure>
+        <li class="round round--dark" data-tone="#1D1A18">
+          <figure class="round__media"><img src="assets/img/photos/ch-luggage.webp" alt="Marc looking up at a towering stack of luggage in an airport" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R5</span>2019 · four states</p>
+            <h3 class="round__title">The Search</h3>
+            <p class="round__what">Waitlisted in California, Arizona, Maryland and New York to widen the odds. Then he told the story online, FOX 11 picked it up, and 33 people offered him a kidney. One by one, they were ruled out.</p>
+            <p class="round__built"><b>What it built</b>Proof that a well-told story moves strangers to act, and the donor-campaign method he now teaches.</p>
           </div>
         </li>
 
-        <li class="chap" data-chap="5" data-reveal-art="stage">
-          <div class="chap__media plate" data-parallax="0.03"><img src="assets/img/photos/hospital-embrace.jpg" alt="Marc Coronel embracing a loved one in his hospital room after the transplant" width="674" height="360" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">06</span> December 10, 2019 &middot; UCLA</p>
-            <h3 class="chap__title">The Transplant</h3>
-            <p>Shawna Robinson, a friend of his sister&rsquo;s, saw the story and offered. Anemia disqualified her; iron infusions brought her back. Four hours of surgery, and Marc was walking the hall before the day was out.</p>
-            <p>The match came from the story being public. That is the entire thesis of the work he does now.</p>
-            <p class="chap__fact">Discharged in three days, no complications. <span>Source: American Kidney Fund</span></p>
+        <li class="round round--dawn" data-tone="#F3E3CF">
+          <figure class="round__media"><img src="assets/img/photos/ch-transplant.webp" alt="Marc in a hospital gown embracing someone after surgery" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R6</span>December 10, 2019 · UCLA</p>
+            <h3 class="round__title">The Gift</h3>
+            <p class="round__what">Shawna Robinson, a friend of his sister&rsquo;s, saw the story and stepped forward. Anemia almost ruled her out; iron infusions brought her back. He was walking within hours and home in three days.</p>
+            <p class="round__built"><b>What it built</b>The thesis behind everything since: the match came <em>because</em> the story was public.</p>
           </div>
         </li>
 
-        <li class="chap" data-chap="6" data-reveal-art="stage">
-          <div class="chap__media plate" data-parallax="0.03"><img src="assets/img/photos/capitol-meeting.jpg" alt="Marc Coronel meeting with a California legislator in Sacramento, state flag behind him" width="1320" height="856" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">07</span> 2020 onward</p>
-            <h3 class="chap__title">The Advocate</h3>
-            <p>He took the playbook back to the people still waiting. Lifestyle Athletics programs inside prisons, schools and companies. California Team Leader for NephCure. Lead Ambassador for UCLA Health&rsquo;s CORE Kidney Program.</p>
-            <p>Then he stopped asking institutions for attention and started asking them for law &mdash; carrying the ask from a city council office, to a statehouse, to Capitol Hill.</p>
-            <p class="chap__fact">Los Angeles FSGS Awareness Day and California HR 113 now formally recognize FSGS. <span>Source: LA City Council &middot; California State Assembly</span></p>
+        <li class="round" data-tone="#E4EAE3">
+          <figure class="round__media"><img src="assets/img/photos/ch-capitol.webp" alt="Marc on the steps of the US Capitol" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R7</span>2020 onward</p>
+            <h3 class="round__title">The Advocate</h3>
+            <p class="round__what">Lead ambassador for UCLA&rsquo;s CORE Kidney Program. American Kidney Fund Ambassador and Kidney Health Coach. NephCure team leader. He was the only advocate working with the council office behind Los Angeles&rsquo; FSGS Awareness Day, then took it to the State Senate and Capitol Hill.</p>
+            <p class="round__built"><b>What it built</b>A move from asking institutions for attention to asking them for law.</p>
           </div>
         </li>
 
-        <li class="chap" data-chap="7" data-reveal-art="stage">
-          <div class="chap__media plate" data-parallax="0.03"><img src="assets/img/photos/tedx-stage.jpg" alt="Marc Coronel speaking on the TEDx Logan Circle stage" width="1156" height="679" loading="lazy"></div>
-          <div class="chap__body">
-            <p class="chap__meta"><span class="chap__no">08</span> Today</p>
-            <h3 class="chap__title">The Consultant &amp; Speaker</h3>
-            <p>TEDx Logan Circle, on how one honest, public post became a search that found a match. Capitol Hill, briefing Congress on living-donor protections. American Kidney Fund Ambassador and Kidney Health Coach. Co-author of peer-reviewed FSGS research, published in CJASN. Host of the Nephluence Project.</p>
-            <p>And consulting work with health systems, pharma and health-tech teams on turning lived patient reality into product, program and policy decisions. Same fight, bigger room.</p>
-            <figure class="chap__quote">
-              <blockquote>Advocacy often starts from a place of survival and grows into purpose.</blockquote>
-              <figcaption>&mdash; to Voyage LA</figcaption>
-            </figure>
+        <li class="round" data-tone="#EFE8DC">
+          <figure class="round__media"><img src="assets/img/photos/ch-tedx-room.webp" alt="Marc speaking on the TEDx stage to a full room" loading="lazy"></figure>
+          <div class="round__body">
+            <p class="round__meta"><span class="round__no">R8</span>Today</p>
+            <h3 class="round__title">The Platform</h3>
+            <p class="round__what">TEDx, on <em>The Courage to Ask</em>. Co-author in the <em>Clinical Journal of the American Society of Nephrology</em>. Host of The Kidney Fighter Podcast and the Nephluence Project. A consultant to the teams building care for patients like him.</p>
+            <p class="round__built"><b>What it built</b><em>&ldquo;Advocacy often starts from a place of survival and grows into purpose.&rdquo;</em></p>
           </div>
         </li>
 
       </ol>
     </div>
 
-    <ol class="story__index" id="storyIndex" aria-label="Chapter index">
-      <li><button type="button" data-goto="0"><i>01</i><span>The Boxer</span></button></li>
-      <li><button type="button" data-goto="1"><i>02</i><span>The Diagnosis</span></button></li>
-      <li><button type="button" data-goto="2"><i>03</i><span>The Fall</span></button></li>
-      <li><button type="button" data-goto="3"><i>04</i><span>The Grind</span></button></li>
-      <li><button type="button" data-goto="4"><i>05</i><span>The Search</span></button></li>
-      <li><button type="button" data-goto="5"><i>06</i><span>The Transplant</span></button></li>
-      <li><button type="button" data-goto="6"><i>07</i><span>The Advocate</span></button></li>
-      <li><button type="button" data-goto="7"><i>08</i><span>Today</span></button></li>
-    </ol>
-
-    <div class="story__bar" aria-hidden="true"><span id="storyBar"></span></div>
-  </div>
-</section>
-
-<!-- ═══ 4. THE HINGE ═════════════════════════════════════════════════════ -->
-<section class="hinge" id="hinge" data-section="hinge" data-reveal-art="stage">
-  <div class="hinge__inner">
-    <p class="eyebrow rv" data-rv="1">Survival &rarr; purpose</p>
-    <h2 class="hinge__h2 rv" data-rv="2">The transplant wasn&rsquo;t the ending.<br><em>It was the proof.</em></h2>
-    <div class="hinge__cols">
-      <p class="rv" data-rv="3">A stranger gave up a kidney because a story reached her. Everything Marc builds now runs on that one mechanism: make the human reality legible, and people move &mdash; donors, clinicians, product teams, legislators.</p>
-      <p class="rv" data-rv="4">The years since have been spent turning that accident into a method, and handing it to the people who are still in the chair, still waiting on a call, still being talked about instead of talked to.</p>
+    <div class="rounds__foot">
+      <ol class="rounds__index" id="roundsIndex" aria-label="Jump to a round">
+        <li><button type="button" data-goto="0"><i>R1</i><span>Athlete</span></button></li>
+        <li><button type="button" data-goto="1"><i>R2</i><span>Diagnosis</span></button></li>
+        <li><button type="button" data-goto="2"><i>R3</i><span>Fall</span></button></li>
+        <li><button type="button" data-goto="3"><i>R4</i><span>Chair</span></button></li>
+        <li><button type="button" data-goto="4"><i>R5</i><span>Search</span></button></li>
+        <li><button type="button" data-goto="5"><i>R6</i><span>Gift</span></button></li>
+        <li><button type="button" data-goto="6"><i>R7</i><span>Advocate</span></button></li>
+        <li><button type="button" data-goto="7"><i>R8</i><span>Platform</span></button></li>
+      </ol>
+      <div class="rounds__bar" aria-hidden="true"><span id="roundsBar"></span></div>
     </div>
-    <figure class="pull pull--wide rv" data-rv="5">
-      <blockquote>A healthy person has a thousand wishes and a sick person has just one &mdash; to get better.</blockquote>
-      <figcaption>Marc Coronel, to UCLA Health</figcaption>
-    </figure>
   </div>
 </section>
 
-<!-- ═══ 5. PROOF ═════════════════════════════════════════════════════════ -->
-<section class="proof" id="proof" data-section="proof">
+<!-- ═══ 05 · THE HINGE ═════════════════════════════════════════════════════ -->
+<section class="hinge" id="hinge" data-section="rounds" data-label="Eight rounds" data-theme="dark">
+  <div class="hinge__pin" id="hingePin">
+    <figure class="hinge__frame" id="hingeFrame">
+      <img src="assets/img/photos/g-ucla-core.webp" alt="Marc with a UCLA CORE Kidney colleague, both wearing green donation ribbons" loading="lazy">
+    </figure>
+    <div class="hinge__text">
+      <p class="hinge__l1" id="hingeL1">The transplant wasn&rsquo;t the ending.</p>
+      <p class="hinge__l2" id="hingeL2"><em>It was the proof.</em></p>
+    </div>
+  </div>
+  <div class="hinge__after">
+    <p data-reveal>A stranger gave up a kidney because a story reached her. Everything Marc builds now runs on that one mechanism. Make the human reality legible and people move: donors, clinicians, product teams, legislators.</p>
+    <blockquote data-split="words">&ldquo;A healthy person has a thousand wishes and a sick person has just one: to get better.&rdquo;</blockquote>
+    <p class="hinge__cite" data-reveal>Marc Coronel, to UCLA Health</p>
+  </div>
+</section>
 
-  <header class="sec__head">
-    <p class="eyebrow rv" data-rv="1">Receipts</p>
-    <h2 class="sec__title rv" data-rv="2">What the work has actually moved</h2>
+<!-- ═══ 06 · IMPACT ════════════════════════════════════════════════════════ -->
+<section class="impact" id="impact" data-section="impact" data-label="Receipts" data-theme="light">
+  <header class="sec-head">
+    <p class="eyebrow"><span class="eyebrow__no">04</span> The receipts</p>
+    <h2 class="sec-title" data-split="lines">What the fight has <em>actually</em> moved.</h2>
   </header>
 
   <ul class="metrics">
-    <li class="rv" data-rv="1"><b data-count="32">32</b><em>Potential living donors screened before one match was found</em></li>
-    <li class="rv" data-rv="2"><b data-count="2">2</b><em>Jurisdictions formally recognizing FSGS awareness &mdash; the City of LA and the State of California</em></li>
-    <li class="rv" data-rv="3"><b data-count="3">3</b><em>Legislative campaigns carried from a council office to a statehouse to Capitol Hill</em></li>
-    <li class="rv" data-rv="4"><b data-count="20">20</b><span class="metrics__suffix">+ yrs</span><em>Inside the health and wellness industry, from gym floors to health systems</em></li>
+    <li class="metric" data-reveal>
+      <p class="metric__n"><b data-count="34">34</b><span>&ndash;0</span></p>
+      <p class="metric__t">California Senate vote on SCR 87, which made June 10 FSGS Awareness Day</p>
+    </li>
+    <li class="metric" data-reveal>
+      <p class="metric__n"><b data-count="33">33</b></p>
+      <p class="metric__t">People who offered Marc a kidney after he told his story in public</p>
+    </li>
+    <li class="metric" data-reveal>
+      <p class="metric__n"><b data-count="966">966</b></p>
+      <p class="metric__t">Living donors and recipients in one room: a Guinness World Record he helped set, Denver 2026</p>
+    </li>
+    <li class="metric" data-reveal>
+      <p class="metric__n"><b data-count="15">15</b><span>yrs</span></p>
+      <p class="metric__t">Living with FSGS, through diagnosis, dialysis and transplant</p>
+    </li>
+    <li class="metric" data-reveal>
+      <p class="metric__n"><b data-count="67">67</b></p>
+      <p class="metric__t">Books on mental strength and adversity, read in the dialysis chair</p>
+    </li>
+    <li class="metric" data-reveal>
+      <p class="metric__n"><b data-count="3">3</b></p>
+      <p class="metric__t">Governments recognizing FSGS: City of Los Angeles, the California Senate and the California Assembly</p>
+    </li>
   </ul>
 
-  <div class="proof__split">
-    <div class="accolades">
-      <h3 class="sub rv" data-rv="1">Selected</h3>
-      <dl>
-        <div class="rv" data-rv="2"><dt>TEDx Logan Circle</dt><dd>&ldquo;How I Found an Organ Donor Through Digital Storytelling&rdquo;</dd></div>
-        <div class="rv" data-rv="2"><dt>American Kidney Fund</dt><dd>Ambassador &amp; Kidney Health Coach</dd></div>
-        <div class="rv" data-rv="3"><dt>NephCure</dt><dd>California Team Leader</dd></div>
-        <div class="rv" data-rv="3"><dt>UCLA Health CORE Kidney</dt><dd>Lead Ambassador &middot; Circle of CORE Ambassador</dd></div>
-        <div class="rv" data-rv="4"><dt>CJASN</dt><dd>Co-author, peer-reviewed research on the FSGS patient experience</dd></div>
-        <div class="rv" data-rv="4"><dt>Transplant Games of America</dt><dd>Gold medalist, Denver 2026 &middot; Team SoCal</dd></div>
-        <div class="rv" data-rv="5"><dt>Los Angeles City Council</dt><dd>FSGS Awareness Day resolution, District 1</dd></div>
-        <div class="rv" data-rv="5"><dt>California HR 113</dt><dd>FSGS Awareness Day, statewide</dd></div>
-        <div class="rv" data-rv="6"><dt>Rare Kidneys on the Hill Day</dt><dd>NephCure federal briefings, Washington D.C.</dd></div>
-        <div class="rv" data-rv="6"><dt>Lifestyle Athletics LLC</dt><dd>Founder &amp; CEO &mdash; programs in prisons, schools, corporations</dd></div>
-        <div class="rv" data-rv="7"><dt>In print &amp; on air</dt><dd>HuffPost contributor &middot; FOX 11 LA &middot; UCLA Health &middot; Voyage LA &middot; host, the Nephluence Project</dd></div>
-      </dl>
-    </div>
+  <div class="honors">
+    <h3 class="honors__title" data-reveal>Recognition &amp; record</h3>
+    <ol class="honors__list" id="honorsList">
+      <li class="honor" data-img="assets/img/photos/g-sacramento.webp"><time>Jun 2026</time><p>California State Assembly, HR 113: FSGS Awareness Day</p><span>Asm. Jeff Gonzalez</span></li>
+      <li class="honor" data-img="assets/img/photos/g-nephcure-team.webp"><time>Jun 2026</time><p>Guinness World Record: most living donors &amp; recipients in one place</p><span>Transplant Games of America</span></li>
+      <li class="honor" data-img="assets/img/photos/g-panel.webp"><time>Apr 2026</time><p>Communication Achievement Award, honoree</p><span>American Red Cross</span></li>
+      <li class="honor" data-img="assets/img/photos/g-filam.webp"><time>Mar 2026</time><p>Certificate of Recognition, World Kidney Day</p><span>Asm. Nick Schultz, AD-44</span></li>
+      <li class="honor" data-img="assets/img/photos/g-tedx-wide.webp"><time>Aug 2025</time><p>&ldquo;The Courage to Ask: How a Simple Story Can Save a Life&rdquo;</p><span>TEDxLogan Circle</span></li>
+      <li class="honor" data-img="assets/img/photos/g-laptop.webp"><time>Aug 2025</time><p>&ldquo;A Patient&rsquo;s Perspective on Transportation and Dialysis Outcomes&rdquo;</p><span>CJASN</span></li>
+      <li class="honor" data-img="assets/img/photos/g-hill-group.webp"><time>Jun 2025</time><p>California State Senate, SCR 87: FSGS Awareness Day, adopted 34&ndash;0</p><span>Sen. Akilah Weber Pierson</span></li>
+      <li class="honor" data-img="assets/img/photos/g-senate-group.webp"><time>Jun 2025</time><p>Lead advocate, City of Los Angeles FSGS Awareness Day proclamation</p><span>CM Eunisses Hernandez, CD-1</span></li>
+      <li class="honor" data-img="assets/img/photos/g-summit-2.webp"><time>Apr 2025</time><p>Impact Award 2024&ndash;25</p><span>NephCure</span></li>
+      <li class="honor" data-img="assets/img/photos/g-ucla-core.webp"><time>Ongoing</time><p>Lead Ambassador, UCLA CORE Kidney Program · AKF Ambassador &amp; Kidney Health Coach</p><span>UCLA Health · AKF</span></li>
+    </ol>
+    <figure class="honors__float" id="honorsFloat" aria-hidden="true"><img src="assets/img/photos/g-sacramento.webp" alt=""></figure>
+  </div>
+</section>
 
-    <div class="voices">
-      <h3 class="sub rv" data-rv="1">In the press</h3>
-      <ol class="voices__list">
-        <li class="voice rv" data-rv="2">
-          <blockquote>&ldquo;Man in need of life-saving kidney transplant has one birthday wish: to be healthier.&rdquo;</blockquote>
-          <figcaption>FOX 11 Los Angeles <i>2019</i></figcaption>
-        </li>
-        <li class="voice rv" data-rv="3">
-          <blockquote>&ldquo;The Hardest Punch I Ever Took&rdquo; &mdash; on why silence nearly cost him his life.</blockquote>
-          <figcaption>American Kidney Fund <i>Kidney Collective</i></figcaption>
-        </li>
-        <li class="voice rv" data-rv="4">
-          <blockquote>&ldquo;How I Found an Organ Donor Through Digital Storytelling.&rdquo;</blockquote>
-          <figcaption>TEDx Logan Circle <i>Talk</i></figcaption>
-        </li>
-      </ol>
+<!-- ═══ 07 · IN THE ROOM (zoom-through gallery) ════════════════════════════ -->
+<section class="room" id="room" data-section="room" data-label="In the room" data-theme="dark">
+  <div class="room__pin" id="roomPin">
+    <div class="room__center">
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__no">05</span> From the road</p>
+      <h2 class="room__title">In the <em>room.</em></h2>
+      <p class="room__cap" id="roomCap">Capitol Hill · Sacramento · UCLA · NYC · Houston</p>
+    </div>
+    <div class="room__field" id="roomField" aria-hidden="true">
+      <figure class="fly" style="--x:-30;--y:-18"><img src="assets/img/photos/g-hill-group.webp" alt="" loading="lazy"><figcaption>Rare Kidneys on the Hill</figcaption></figure>
+      <figure class="fly" style="--x:28;--y:-22"><img src="assets/img/photos/g-summit-2.webp" alt="" loading="lazy"><figcaption>NephCure Summit, NYC</figcaption></figure>
+      <figure class="fly" style="--x:-24;--y:20"><img src="assets/img/photos/g-ucla-podium.webp" alt="" loading="lazy"><figcaption>UCLA Health</figcaption></figure>
+      <figure class="fly" style="--x:32;--y:16"><img src="assets/img/photos/g-panel.webp" alt="" loading="lazy"><figcaption>Renal Support Network, Burbank</figcaption></figure>
+      <figure class="fly" style="--x:-8;--y:-26"><img src="assets/img/photos/g-sacramento.webp" alt="" loading="lazy"><figcaption>State Capitol, Sacramento</figcaption></figure>
+      <figure class="fly" style="--x:8;--y:24"><img src="assets/img/photos/g-asn.webp" alt="" loading="lazy"><figcaption>ASN Kidney Week, Houston</figcaption></figure>
+      <figure class="fly" style="--x:-34;--y:0"><img src="assets/img/photos/g-hill-meeting.webp" alt="" loading="lazy"><figcaption>Congressional meeting</figcaption></figure>
+      <figure class="fly" style="--x:34;--y:-2"><img src="assets/img/photos/g-nephcure-team.webp" alt="" loading="lazy"><figcaption>Patient &amp; Youth Summit</figcaption></figure>
+      <figure class="fly" style="--x:-18;--y:-6"><img src="assets/img/photos/g-senate-group.webp" alt="" loading="lazy"><figcaption>With legislators</figcaption></figure>
+      <figure class="fly" style="--x:20;--y:6"><img src="assets/img/photos/g-filam.webp" alt="" loading="lazy"><figcaption>Filipino American History Month</figcaption></figure>
+      <figure class="fly" style="--x:-4;--y:14"><img src="assets/img/photos/g-capitol-aerial.webp" alt="" loading="lazy"><figcaption>Washington, D.C.</figcaption></figure>
+      <figure class="fly" style="--x:4;--y:-12"><img src="assets/img/photos/g-tedx-wide.webp" alt="" loading="lazy"><figcaption>TEDxLogan Circle</figcaption></figure>
     </div>
   </div>
+</section>
 
-  <div class="gallery" id="gallery">
-    <h3 class="sub rv" data-rv="1">From the road</h3>
-    <ul class="gallery__grid">
-      <li class="g-wide rv wipe" data-rv="2"><figure class="plate"><img src="assets/img/photos/tedx-walk.jpg" alt="Marc Coronel walking the TEDx stage carrying a bag of prescription bottles" width="799" height="984" loading="lazy"><figcaption>TEDx Logan Circle &middot; <em>every bottle he no longer needs</em></figcaption></figure></li>
-      <li class="rv wipe" data-rv="3"><figure class="plate"><img src="assets/img/photos/transplant-games.jpg" alt="Marc Coronel wearing a gold medal at the Transplant Games of America, Denver" width="768" height="1024" loading="lazy"><figcaption>Transplant Games of America &middot; <em>gold, Team SoCal</em></figcaption></figure></li>
-      <li class="rv wipe" data-rv="4"><figure class="plate"><img src="assets/img/photos/hospital-walk.jpg" alt="Marc Coronel walking the hospital hall on the day of his discharge" width="746" height="727" loading="lazy"><figcaption>UCLA Health &middot; <em>walking the hall, day of discharge</em></figcaption></figure></li>
-      <li class="rv wipe" data-rv="3"><figure class="plate"><img src="assets/img/photos/hero-portrait.jpg" alt="Marc Coronel, portrait, Los Angeles" width="738" height="1064" loading="lazy"><figcaption>Los Angeles &middot; <em>between sessions</em></figcaption></figure></li>
-      <li class="rv wipe" data-rv="4"><figure class="plate"><img src="assets/img/photos/capitol-meeting.jpg" alt="Marc Coronel briefing a California legislator in Sacramento" width="1320" height="856" loading="lazy"><figcaption>Sacramento &middot; <em>briefing legislators on HR 113</em></figcaption></figure></li>
-      <li class="g-band rv wipe" data-rv="5"><figure class="plate"><img src="assets/img/photos/hill-day.jpg" alt="Marc Coronel with the NephCure delegation on the US Capitol steps for Rare Kidneys on the Hill Day" width="1320" height="1636" loading="lazy"><figcaption>Capitol Hill, Washington D.C. &middot; <em>Rare Kidneys on the Hill Day</em></figcaption></figure></li>
+<!-- ═══ 08 · IN HIS WORDS + PRESS ══════════════════════════════════════════ -->
+<section class="words" id="words" data-section="room" data-label="In the room" data-theme="light">
+  <p class="eyebrow"><span class="eyebrow__no">06</span> In his words</p>
+  <div class="quotes" id="quotes" data-cursor="Drag">
+    <figure class="quote is-on">
+      <blockquote>I didn&rsquo;t find my purpose in a moment of peace, it found me in the middle of a crisis.</blockquote>
+      <figcaption>to Bold Journey Magazine</figcaption>
+    </figure>
+    <figure class="quote">
+      <blockquote>My purpose? It&rsquo;s to light the way forward for others living in the dark.</blockquote>
+      <figcaption>to Bold Journey Magazine</figcaption>
+    </figure>
+    <figure class="quote">
+      <blockquote>Persistence paired with purpose can move systems.</blockquote>
+      <figcaption>to Voyage LA</figcaption>
+    </figure>
+    <figure class="quote">
+      <blockquote>The data helps us understand the medicine. The story helps us understand the human being living it.</blockquote>
+      <figcaption>on LinkedIn</figcaption>
+    </figure>
+    <figure class="quote">
+      <blockquote>I read about 67 books on mental strength and adversity while on dialysis.</blockquote>
+      <figcaption>to the American Kidney Fund</figcaption>
+    </figure>
+  </div>
+  <div class="quotes__nav">
+    <button type="button" id="qPrev" aria-label="Previous quote" data-cursor="Prev"><span class="arrow-l"></span></button>
+    <p class="quotes__count"><span id="qNow">01</span> / <span id="qAll">05</span></p>
+    <button type="button" id="qNext" aria-label="Next quote" data-cursor="Next"><span class="arrow-r"></span></button>
+    <div class="quotes__timer" aria-hidden="true"><span id="qTimer"></span></div>
+  </div>
+
+  <div class="press">
+    <p class="press__label">As covered by</p>
+    <div class="marquee" aria-label="Press and publications">
+      <div class="marquee__track">
+        <span>FOX 11 Los Angeles</span><i>✦</i><span>UCLA Health</span><i>✦</i><span>American Kidney Fund</span><i>✦</i><span>TEDx</span><i>✦</i><span>CJASN</span><i>✦</i><span>Bold Journey</span><i>✦</i><span>Voyage LA</span><i>✦</i><span>HuffPost</span><i>✦</i><span>American Red Cross</span><i>✦</i><span>Pasadena Now</span><i>✦</i>
+      </div>
+      <div class="marquee__track" aria-hidden="true">
+        <span>FOX 11 Los Angeles</span><i>✦</i><span>UCLA Health</span><i>✦</i><span>American Kidney Fund</span><i>✦</i><span>TEDx</span><i>✦</i><span>CJASN</span><i>✦</i><span>Bold Journey</span><i>✦</i><span>Voyage LA</span><i>✦</i><span>HuffPost</span><i>✦</i><span>American Red Cross</span><i>✦</i><span>Pasadena Now</span><i>✦</i>
+      </div>
+    </div>
+    <ul class="headlines">
+      <li data-reveal><a href="https://www.foxla.com/news/former-boxer-knocks-out-kidney-disease" target="_blank" rel="noopener"><span class="headlines__src">FOX 11 Los Angeles</span><span class="headlines__h">Former boxer knocks out kidney disease</span><span class="headlines__go" aria-hidden="true">↗</span></a></li>
+      <li data-reveal><a href="https://www.uclahealth.org/news/article/ucla-kidney-transplant-patient-now-fights-for-a-new-cause" target="_blank" rel="noopener"><span class="headlines__src">UCLA Health</span><span class="headlines__h">UCLA kidney-transplant patient now fights for a new cause</span><span class="headlines__go" aria-hidden="true">↗</span></a></li>
+      <li data-reveal><a href="https://www.kidneyfund.org/article/marc-coronel-shares-his-journey-living-rare-kidney-disease-first-fsgs-awareness-day" target="_blank" rel="noopener"><span class="headlines__src">American Kidney Fund</span><span class="headlines__h">Marc Coronel shares his journey living with a rare kidney disease for the first FSGS Awareness Day</span><span class="headlines__go" aria-hidden="true">↗</span></a></li>
+      <li data-reveal><a href="https://tedxlogancircle.com/marc-coronel/" target="_blank" rel="noopener"><span class="headlines__src">TEDxLogan Circle</span><span class="headlines__h">The Courage to Ask: How a Simple Story Can Save a Life</span><span class="headlines__go" aria-hidden="true">↗</span></a></li>
+      <li data-reveal><a href="https://boldjourney.com/meet-marc-coronel/" target="_blank" rel="noopener"><span class="headlines__src">Bold Journey</span><span class="headlines__h">Meet Marc Coronel</span><span class="headlines__go" aria-hidden="true">↗</span></a></li>
+      <li data-reveal><a href="https://voyagela.com/interview/marc-coronel-of-los-angeles-on-life-lessons-legacy-highlight/" target="_blank" rel="noopener"><span class="headlines__src">Voyage LA</span><span class="headlines__h">Marc Coronel of Los Angeles on Life, Lessons &amp; Legacy</span><span class="headlines__go" aria-hidden="true">↗</span></a></li>
     </ul>
   </div>
 </section>
 
-<!-- ═══ 6. SERVICE LANES ═════════════════════════════════════════════════ -->
-<section class="lanes" id="services" data-section="services">
-  <header class="sec__head">
-    <p class="eyebrow rv" data-rv="1">Three ways to work together</p>
-    <h2 class="sec__title rv" data-rv="2">Bring him in</h2>
+<!-- ═══ 09 · WRITING ═══════════════════════════════════════════════════════ -->
+<section class="writing" id="writing" data-section="writing" data-label="Writing" data-theme="light">
+  <header class="sec-head sec-head--row">
+    <div>
+      <p class="eyebrow"><span class="eyebrow__no">07</span> From the desk</p>
+      <h2 class="sec-title" data-split="lines">He writes from <em>inside</em> the system.</h2>
+    </div>
+    <a class="link-arrow" href="https://www.linkedin.com/in/marc-a-coronel-43a41b64/recent-activity/articles/" target="_blank" rel="noopener">All articles on LinkedIn</a>
   </header>
+  <div class="shelf" id="shelf" data-cursor="Drag">
+    <ul class="shelf__track" id="shelfTrack">
+      <li class="post"><a href="https://www.linkedin.com/pulse/how-generative-ai-transforming-patient-experience-why-marc-a-coronel-ktfsc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/g-laptop.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Sep 2026</time><h3>How Generative AI Is Transforming the Patient Experience: Why AI Isn&rsquo;t My Doctor, But Helps Me Become a Better Patient</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/you-dont-look-sick-why-kidney-disease-ultimate-illness-coronel-xgsjc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/ch-pills.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Sep 2026</time><h3>&ldquo;You Don&rsquo;t Look Sick&rdquo;: Why Kidney Disease Is the Ultimate Invisible Illness</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/hidden-journey-kidney-disease-diagnosis-dialysis-three-coronel-xstlc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/hero-roundtable.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Aug 2026</time><h3>The Hidden Journey of Kidney Disease: Diagnosis, Dialysis, and Transplant Are Three Different Worlds</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/when-98-room-patients-healthcare-sounds-different-marc-a-coronel-xsgxc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/g-panel.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Aug 2026</time><h3>When 98% of the Room Is Patients, Healthcare Sounds Different</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/one-diagnosis-email-fifteen-years-purpose-marc-a-coronel-qmawc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/g-senate-group.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Jul 2026</time><h3>One Diagnosis. One Email. Fifteen Years of Purpose.</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/finding-hope-together-what-2026-nephcure-patient-summit-coronel-20flc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/g-nephcure-team.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Jun 2026</time><h3>Finding Hope Together: What the 2026 NephCure Patient Summit Taught Me</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/flow-state-kidney-rare-disease-care-how-patients-teams-coronel-acgvc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/ch-couch.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Feb 2026</time><h3>Flow State in Kidney &amp; Rare Disease Care: How Patients and Care Teams Find Alignment</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/surviving-eaton-canyon-palisades-fires-how-los-angeles-coronel-iyywc" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/g-altadena.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Jan 2026</time><h3>Surviving the Eaton Canyon and Palisades Fires: How Los Angeles Came Together</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/traveling-chronic-illness-medication-timing-across-time-coronel-nk7ac" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/ch-luggage.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Dec 2025</time><h3>Traveling with Chronic Illness? Medication Timing Across Time Zones Matters</h3></a></li>
+      <li class="post"><a href="https://www.linkedin.com/pulse/future-nephrology-collaborative-insights-from-asn-kidney-coronel-tuo9c" target="_blank" rel="noopener" draggable="false">
+        <figure><img src="assets/img/photos/g-asn.webp" alt="" loading="lazy" draggable="false"></figure>
+        <time>Nov 2025</time><h3>The Future of Nephrology Is Collaborative: Insights from ASN Kidney Week 2025</h3></a></li>
+    </ul>
+  </div>
+  <div class="shelf__bar" aria-hidden="true"><span id="shelfBar"></span></div>
+</section>
 
-  <div class="lanes__grid">
-    <article class="lane rv" data-rv="2">
-      <span class="lane__no">01</span>
-      <h3>Speak</h3>
-      <p class="lane__line">Keynotes and fireside sessions on resilience, patient voice, and what chronic illness actually asks of a person &mdash; for health systems, industry conferences, schools and teams.</p>
-      <ul class="lane__list">
-        <li>Keynote, 30&ndash;60 min</li>
-        <li>Fireside &amp; moderated panel</li>
-        <li>Patient-experience workshop</li>
-      </ul>
-      <a class="btn btn--ghost" href="#contact" data-intent="Speaking" data-cursor="book">Check a date</a>
+<!-- ═══ 10 · THE PLATFORM (products) ═══════════════════════════════════════ -->
+<section class="platform" id="platform" data-section="platform" data-label="Platform" data-theme="dark">
+  <div class="platform__bg" aria-hidden="true"><span>KIDNEY</span><span>FIGHTER</span></div>
+  <header class="sec-head">
+    <p class="eyebrow eyebrow--light"><span class="eyebrow__no">08</span> The platform</p>
+    <h2 class="sec-title sec-title--light" data-split="lines">Resilience is a skill. <em>Fighting is an art.</em></h2>
+  </header>
+  <div class="platform__grid">
+    <article class="pcard pcard--big" data-reveal>
+      <figure class="pcard__img"><img src="assets/img/photos/g-studio.webp" alt="Marc in a recording studio" loading="lazy"></figure>
+      <div class="pcard__body">
+        <p class="pcard__tag">Podcast · YouTube</p>
+        <h3>The Kidney Fighter Podcast</h3>
+        <p>A patient-powered space for the highs, the lows and the unfiltered reality of life with kidney disease. Transplant, dialysis, or just getting through the day. For fighters, by fighters.</p>
+        <a class="link-arrow link-arrow--light" href="https://www.youtube.com/@KidneyFighterShow" target="_blank" rel="noopener">Watch the show</a>
+      </div>
     </article>
-
-    <article class="lane rv" data-rv="3">
-      <span class="lane__no">02</span>
-      <h3>Consult</h3>
-      <p class="lane__line">Digital-health and patient-experience work with hospitals, providers and health-tech teams: turning lived patient reality into product, program and communication decisions.</p>
-      <ul class="lane__list">
-        <li>Digital health implementation</li>
-        <li>Patient-experience advisory</li>
-        <li>Storytelling &amp; comms strategy</li>
-      </ul>
-      <a class="btn btn--ghost" href="#contact" data-intent="Consulting" data-cursor="book">Start a scope</a>
+    <article class="pcard" data-reveal>
+      <div class="pcard__body">
+        <p class="pcard__tag">Platform</p>
+        <h3>The Nephluence Project</h3>
+        <p>Where patients, healthcare, research, innovation, policy and storytelling meet, so decisions about patients stop being made without them. Long-form conversations with patients, donors, physicians and policy leaders.</p>
+        <ul class="chips"><li>Patients</li><li>Research</li><li>Innovation</li><li>Policy</li><li>Storytelling</li></ul>
+      </div>
     </article>
-
-    <article class="lane rv" data-rv="4">
-      <span class="lane__no">03</span>
-      <h3>Advocate</h3>
-      <p class="lane__line">Awareness campaigns, living-donor storytelling, and policy and partnership work with kidney organizations and rare-disease coalitions &mdash; carried through the Nephluence Project.</p>
-      <ul class="lane__list">
-        <li>Awareness campaigns</li>
-        <li>Living-donor search coaching</li>
-        <li>Policy &amp; coalition partnership</li>
-      </ul>
-      <a class="btn btn--ghost" href="#contact" data-intent="Advocacy" data-cursor="book">Partner with Marc</a>
+    <article class="pcard pcard--red" data-reveal>
+      <div class="pcard__body">
+        <p class="pcard__tag">Method</p>
+        <h3>The Kidney Fighter Method</h3>
+        <p>The donor-campaign and self-advocacy playbook behind 33 kidney offers. It covers how to tell your story online, ask for help clearly, and walk into appointments ready to be a partner in your own care. Taught through workshops, writing and one-on-one coaching.</p>
+        <a class="link-arrow link-arrow--light" href="#contact" data-intent="Coaching / workshop" data-cursor="Book">Ask about a workshop</a>
+      </div>
+    </article>
+    <article class="pcard" data-reveal>
+      <div class="pcard__body">
+        <p class="pcard__tag">Community</p>
+        <h3>@kidney_fighter</h3>
+        <p>Daily notes from life after transplant: training, medication, advocacy days, and the people still waiting. It&rsquo;s where most patients find Marc first.</p>
+        <a class="link-arrow link-arrow--light" href="https://www.instagram.com/kidney_fighter/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
     </article>
   </div>
 </section>
 
-<!-- ═══ 7. CONTACT ═══════════════════════════════════════════════════════ -->
-<section class="contact" id="contact" data-section="contact">
+<!-- ═══ 11 · SERVICES ══════════════════════════════════════════════════════ -->
+<section class="lanes" id="services" data-section="services" data-label="Work with Marc" data-theme="light">
+  <header class="sec-head sec-head--row">
+    <div>
+      <p class="eyebrow"><span class="eyebrow__no">09</span> Work with Marc</p>
+      <h2 class="sec-title" data-split="lines">Three ways to bring him <em>in.</em></h2>
+    </div>
+    <p class="lanes__lead" data-reveal>Health systems, transplant centers, pharma and biotech, patient organizations, schools and companies. The format changes. The goal stays the same: get the patient&rsquo;s reality into the room.</p>
+  </header>
+
+  <div class="lanes__grid" id="lanes">
+    <article class="lane" data-reveal>
+      <figure class="lane__img"><img src="assets/img/photos/g-tedx-wide.webp" alt="Marc on the TEDx stage" loading="lazy"></figure>
+      <div class="lane__body">
+        <span class="lane__no">01</span>
+        <h3>Speak</h3>
+        <p>Keynotes and firesides on resilience, patient voice and what chronic illness actually asks of a person.</p>
+        <ul>
+          <li>Keynote, 30&ndash;60 min</li>
+          <li>Fireside &amp; moderated panel</li>
+          <li>Patient-experience workshop</li>
+        </ul>
+        <a class="link-arrow" href="#contact" data-intent="Speaking" data-cursor="Book">Check a date</a>
+      </div>
+    </article>
+    <article class="lane" data-reveal>
+      <figure class="lane__img"><img src="assets/img/photos/g-hill-meeting.webp" alt="Marc in a meeting with policymakers" loading="lazy"></figure>
+      <div class="lane__body">
+        <span class="lane__no">02</span>
+        <h3>Consult</h3>
+        <p>Patient engagement, digital health and communications strategy, drawn from someone who has been through diagnosis, dialysis and transplant himself.</p>
+        <ul>
+          <li>Patient engagement &amp; advisory boards</li>
+          <li>Research recruitment &amp; PCOR</li>
+          <li>Digital health &amp; comms strategy</li>
+        </ul>
+        <a class="link-arrow" href="#contact" data-intent="Consulting" data-cursor="Book">Start a scope</a>
+      </div>
+    </article>
+    <article class="lane" data-reveal>
+      <figure class="lane__img"><img src="assets/img/photos/g-hill-group.webp" alt="Advocates on the steps of the US Capitol" loading="lazy"></figure>
+      <div class="lane__body">
+        <span class="lane__no">03</span>
+        <h3>Advocate</h3>
+        <p>Awareness campaigns, living-donor storytelling, and policy and coalition work with kidney and rare-disease organizations.</p>
+        <ul>
+          <li>Awareness &amp; proclamation campaigns</li>
+          <li>Living-donor search coaching</li>
+          <li>Policy &amp; coalition partnership</li>
+        </ul>
+        <a class="link-arrow" href="#contact" data-intent="Advocacy" data-cursor="Book">Partner with Marc</a>
+      </div>
+    </article>
+  </div>
+
+  <div class="talks">
+    <h3 class="talks__title" data-reveal>Signature talks</h3>
+    <ol class="talks__list">
+      <li data-reveal><i>01</i><div><h4>The Courage to Ask</h4><p>How a simple story can save a life. The TEDx talk: 33 kidney offers, one match, and what it takes to ask out loud.</p></div></li>
+      <li data-reveal><i>02</i><div><h4>You Don&rsquo;t Look Sick</h4><p>Invisible illness, stigma, and where the language of &ldquo;fighting&rdquo; helps patients, and where it quietly works against them.</p></div></li>
+      <li data-reveal><i>03</i><div><h4>When the Room Is Patients</h4><p>What changes when lived experience sits beside clinical expertise, and how to design for it.</p></div></li>
+      <li data-reveal><i>04</i><div><h4>AI Isn&rsquo;t My Doctor</h4><p>How patients are using generative AI to understand their care and ask better questions, and what that means for care teams.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ═══ 12 · CONTACT ═══════════════════════════════════════════════════════ -->
+<section class="contact" id="contact" data-section="contact" data-label="Contact" data-theme="dark">
   <div class="contact__grid">
     <div class="contact__lead">
-      <p class="eyebrow rv" data-rv="1">Booking</p>
-      <h2 class="contact__h2 rv" data-rv="2">Tell him what the room needs.</h2>
-      <p class="contact__note rv" data-rv="3">Dates, budgets, scope, or a question you are not sure how to ask yet. Replies usually come from Marc, not an inbox.</p>
-      <ul class="contact__direct rv" data-rv="4">
-        <li><span>Email</span><a href="mailto:marc@marccoronel.com" data-cursor="copy">marc@marccoronel.com</a></li>
+      <p class="eyebrow eyebrow--light"><span class="eyebrow__no">10</span> Booking</p>
+      <h2 class="contact__h2" data-split="lines">Tell him what the room <em>needs.</em></h2>
+      <p class="contact__note" data-reveal>Dates, budgets, scope, or a question you&rsquo;re not sure how to ask yet. Replies usually come from Marc himself.</p>
+      <ul class="contact__direct" data-reveal>
+        <!-- ══ REPLACE: real booking address. See README ══ -->
+        <li><span>Email</span><a href="mailto:hello@marccoronel.com" data-cursor="Write">hello@marccoronel.com</a></li>
         <li><span>Instagram</span><a href="https://www.instagram.com/kidney_fighter/" target="_blank" rel="noopener">@kidney_fighter</a></li>
         <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/marc-a-coronel-43a41b64/" target="_blank" rel="noopener">Marc A. Coronel</a></li>
-        <li><span>Podcast</span><a href="mailto:marc@marccoronel.com" data-cursor="copy">The Nephluence Project</a></li>
+        <li><span>YouTube</span><a href="https://www.youtube.com/@KidneyFighterShow" target="_blank" rel="noopener">The Kidney Fighter Show</a></li>
       </ul>
+      <figure class="contact__portrait" data-reveal><img src="assets/img/photos/g-sacramento.webp" alt="Marc at the California State Capitol" loading="lazy"></figure>
     </div>
 
-    <!-- ══ REPLACE action with a real endpoint (Formspree / Basin / your CRM). See README ══ -->
-    <form class="form rv" data-rv="3" id="bookForm" action="#" method="post" novalidate>
-      <div class="field">
-        <label for="f-name">Your name</label>
-        <input id="f-name" name="name" type="text" autocomplete="name" required>
-      </div>
-      <div class="field">
-        <label for="f-org">Organization</label>
-        <input id="f-org" name="organization" type="text" autocomplete="organization">
-      </div>
-      <div class="field">
-        <label for="f-email">Email</label>
-        <input id="f-email" name="email" type="email" autocomplete="email" required>
-      </div>
-      <div class="field field--half">
-        <label for="f-intent">What for</label>
-        <select id="f-intent" name="intent">
-          <option>Speaking</option>
-          <option>Consulting</option>
-          <option>Advocacy</option>
-          <option>Media / podcast</option>
-          <option>Something else</option>
-        </select>
-      </div>
-      <div class="field field--half">
-        <label for="f-date">Date, if you have one</label>
-        <input id="f-date" name="date" type="text" placeholder="e.g. March 2027, or flexible">
-      </div>
-      <div class="field">
-        <label for="f-msg">The short version</label>
-        <textarea id="f-msg" name="message" rows="4" required></textarea>
-      </div>
-      <button class="btn btn--ghost btn--full" type="submit" data-cursor="send">Send booking request</button>
+    <!-- ══ REPLACE action with a real endpoint (Formspree / Basin / CRM). See README ══ -->
+    <form class="form" id="bookForm" action="#" method="post" novalidate data-reveal>
+      <fieldset class="form__intent">
+        <legend>What for</legend>
+        <label><input type="radio" name="intent" value="Speaking" checked><span>Speaking</span></label>
+        <label><input type="radio" name="intent" value="Consulting"><span>Consulting</span></label>
+        <label><input type="radio" name="intent" value="Advocacy"><span>Advocacy</span></label>
+        <label><input type="radio" name="intent" value="Coaching / workshop"><span>Workshop</span></label>
+        <label><input type="radio" name="intent" value="Media / podcast"><span>Media</span></label>
+      </fieldset>
+      <div class="field"><input id="f-name" name="name" type="text" autocomplete="name" placeholder=" " required><label for="f-name">Your name</label></div>
+      <div class="field"><input id="f-org" name="organization" type="text" autocomplete="organization" placeholder=" "><label for="f-org">Organization</label></div>
+      <div class="field"><input id="f-email" name="email" type="email" autocomplete="email" placeholder=" " required><label for="f-email">Email</label></div>
+      <div class="field"><input id="f-date" name="date" type="text" placeholder=" "><label for="f-date">Date, if you have one</label></div>
+      <div class="field field--full"><textarea id="f-msg" name="message" rows="3" placeholder=" " required></textarea><label for="f-msg">The short version</label></div>
+      <button class="btn-send" type="submit" data-cursor="Send"><span>Send booking request</span><i aria-hidden="true"></i></button>
       <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
     </form>
   </div>
 
-  <p class="coda">
-    <span class="rv" data-rv="1">The fight became a platform.</span>
-    <span class="rv" data-rv="3"><em>Now let&rsquo;s move the room.</em></span>
-  </p>
+  <div class="coda" aria-label="The fight became a platform. Now let's move the room.">
+    <div class="coda__track" aria-hidden="true">
+      <span>The fight became a platform.</span><em>Now let&rsquo;s move the room.</em><b>✦</b>
+      <span>The fight became a platform.</span><em>Now let&rsquo;s move the room.</em><b>✦</b>
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span>&copy; <span id="yr">2026</span> Marc Coronel</span>
+    <span>Los Angeles, California</span>
+    <a href="#top" data-cursor="Top">Back to top ↑</a>
+  </footer>
 </section>
 
 </main>
 
-<footer class="foot">
-  <span>&copy; <span id="yr">2026</span> Marc Coronel</span>
-  <span>Los Angeles, CA</span>
-  <a href="#top" data-cursor="top">Back to top</a>
-</footer>
-
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>
